@@ -27,20 +27,17 @@
       };
 
       btn.addEventListener("click", function () {
-        FB.login(
-          function (response) {
-            if (response.authResponse) {
-              // 登录成功
-              console.log("登录成功！");
-              // 这里可以执行登录成功后的操作
-            } else {
-              // 登录失败
-              console.log("登录失败！");
-              // 这里可以执行登录失败后的操作
-            }
-          },
-          { scope: "email" }
-        );
+        FB.login(function (response) {
+          if (response.authResponse) {
+            // 登录成功
+            console.log("登录成功！");
+            // 这里可以执行登录成功后的操作
+          } else {
+            // 登录失败
+            console.log("登录失败！");
+            // 这里可以执行登录失败后的操作
+          }
+        });
       });
     </script>
   </body>
