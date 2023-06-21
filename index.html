@@ -19,7 +19,7 @@
 
       window.fbAsyncInit = function () {
         FB.init({
-          appId: "5b054bdcc29ee26edb8c19e260343e54",
+          appId: "1337858163476895",
           autoLogAppEvents: true,
           xfbml: true,
           version: "v17.0",
@@ -28,6 +28,8 @@
 
       btn.addEventListener("click", function () {
         FB.login(function (response) {
+          console.log(response);
+
           if (response.authResponse) {
             // 登录成功
             console.log("登录成功！");
